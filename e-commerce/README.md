@@ -1,29 +1,16 @@
-# e-commerce
+# Fake e-commerce Vue
+Progetto realizzato in Vue.js, tailwind e fakeStoreApi.
+//immagine
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+**Roadmap**
+ - HomePage
+ - Registrazione
+ - Login
+ - About us
+ - Prodotto singolo
+ - Carrello
+ 
+ **Diario di bordo**
+ 
+ - 04/03/2024
+ Creato repository progetto. Creato vari branch(6). Brainstorning sulla struttura del progetto. Bozza disegnata su Canva. Divisi i vari compiti.
