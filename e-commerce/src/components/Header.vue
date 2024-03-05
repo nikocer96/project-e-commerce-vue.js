@@ -15,27 +15,38 @@ export default {
             this.selectedOption = option;
             this.isDropdownOpen = false;
         },
-    },
-};
+        login() {
+            
+        }
+    }
+}
 </script>
 
 
 <template>
     <nav class="overflow-x-hidden">
         <div class="flex h-[100px] bg-[#0a1128] text-white justify-between items-center p-[10px]">
-            <div>
-                <img class="h-[100px] w-[100px]" src="../assets/logo-ec.png" alt="logo-e-commerce">
+            <div class="mr-[10px]">
+                <a href="/">
+                    <img class="h-[60px] w-[70px] md:max-w-none md:h-[100px] md:w-[100px]"
+                        src="../assets/logo-ec.png" alt="logo-e-commerce">
+                </a>
             </div>
-
+            <div class="hidden min-[480px]:flex mr-[20px]">
+                <a class="border-[1px] border-white p-[7px] rounded-md text-xl font-serif" href="/">Home</a>
+            </div>
             <div>
+
                 <div class="flex justify-center items-center">
+
                     <div>
                         <ul class="flex">
-                            <li><a class=" text-3xl font-semibold font-serif hover:text-4xl max-[700px]:text-2xl max-[600px]:mr-[20px]"
+                            <li><a class=" text-xl font-serif hover:text-2xl max-[600px]:mr-[10px] ml-[20px] border-[1px] border-white rounded-md p-[7px]"
                                     href="/about">About us</a></li>
 
                         </ul>
                     </div>
+
                     <form class="flex justify-end items-center">
                         <div class="hidden max-[600px]:flex">
                             <a href=""><img class="h-[30px] w-[30px] mt-[5px] mr-[20px] rounded-sm"
