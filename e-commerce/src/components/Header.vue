@@ -26,14 +26,16 @@ export default {
             <div>
                 <img class="h-[100px] w-[100px]" src="../assets/logo-ec.png" alt="logo-e-commerce">
             </div>
-            <div>
-                <ul class="flex">
-                    <li><a class="mr-[40px] text-3xl font-semibold font-serif hover:text-4xl max-[700px]:text-2xl" href="">About us</a></li>
 
-                </ul>
-            </div>
             <div>
-                <div class="flex justify-center">
+                <div class="flex justify-center items-center">
+                    <div>
+                        <ul class="flex">
+                            <li><a class=" text-3xl font-semibold font-serif hover:text-4xl max-[700px]:text-2xl max-[600px]:mr-[20px]"
+                                    href="">About us</a></li>
+
+                        </ul>
+                    </div>
                     <form class="flex justify-end items-center">
                         <div class="hidden max-[600px]:flex">
                             <a href=""><img class="h-[30px] w-[30px] mt-[5px] mr-[20px] rounded-sm"
@@ -43,8 +45,10 @@ export default {
                             type="text" placeholder="Ricerca">
                     </form>
                     <div class="hidden min-[730px]:flex justify-center items-center">
-                        <a class="mr-[15px] text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md hover:text-purple-400" href="">Carrello</a>
-                        <a class="text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md  hover:text-purple-400" href="">Login</a>
+                        <a class="mr-[15px] text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md hover:text-purple-400"
+                            href="">Carrello</a>
+                        <a class="text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md  hover:text-purple-400"
+                            href="">Login</a>
                     </div>
 
                     <div class="hidden max-[730px]:flex">
