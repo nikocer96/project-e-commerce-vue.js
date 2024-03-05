@@ -34,7 +34,7 @@ export default {
                 </RouterLink>
             </div>
             <div class="hidden min-[480px]:flex mr-[20px]">
-                <a class="border-[1px] border-white p-[7px] rounded-md text-xl font-serif" href="/">Home</a>
+                <RouterLink to="/" class="border-[1px] border-white p-[7px] rounded-md text-xl font-serif">Home</RouterLink>
             </div>
             <div>
 
@@ -50,15 +50,15 @@ export default {
 
                     <form class="flex justify-end items-center">
                         <div class="hidden max-[600px]:flex">
-                            <a href=""><img class="h-[30px] w-[30px] mt-[5px] mr-[20px] rounded-sm"
-                                    src="../assets/lente.svg" alt="immagine-lente-ricerca"></a>
+                            <RouterLink to="#"><img class="h-[30px] w-[30px] mt-[5px] mr-[20px] rounded-sm"
+                                    src="../assets/lente.svg" alt="immagine-lente-ricerca"></RouterLink>
                         </div>
                         <input class="hidden min-[600px]:flex w-[100%] h-[100%] ml-[15px] mr-[10px] rounded-[20px]"
                             type="text" placeholder="Ricerca">
                     </form>
                     <div class="hidden min-[730px]:flex justify-center items-center">
-                        <a class="mr-[15px] text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md hover:text-purple-400"
-                            href="">Carrello</a>
+                        <RouterLink to="#" class="mr-[15px] text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md hover:text-purple-400"
+                            >Carrello</RouterLink>
                         <RouterLink  to="./login" class="text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md  hover:text-purple-400"
                            >Login</RouterLink>
                     </div>
