@@ -1,5 +1,6 @@
 <script>
 import axios from 'axios'
+
 export default {
   data() {
     return {
@@ -29,9 +30,9 @@ export default {
       });
   },
   methods: {
-    // aggiungiCarrello() {
-      
-    // }
+    aggiungiCarrello() {
+        
+    }
   }
 }
 </script>
