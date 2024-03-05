@@ -1,4 +1,5 @@
 <script>
+import { RouterLink } from 'vue-router';
 
 export default {
     data() {
@@ -27,10 +28,10 @@ export default {
     <nav class="overflow-x-hidden">
         <div class="flex h-[100px] bg-[#0a1128] text-white justify-between items-center p-[10px]">
             <div class="mr-[10px]">
-                <a href="/">
+                <RouterLink to="/">
                     <img class="h-[60px] w-[70px] md:max-w-none md:h-[100px] md:w-[100px]"
                         src="../assets/logo-ec.png" alt="logo-e-commerce">
-                </a>
+                </RouterLink>
             </div>
             <div class="hidden min-[480px]:flex mr-[20px]">
                 <a class="border-[1px] border-white p-[7px] rounded-md text-xl font-serif" href="/">Home</a>
@@ -41,8 +42,8 @@ export default {
 
                     <div>
                         <ul class="flex">
-                            <li><a class=" text-xl font-serif hover:text-2xl max-[600px]:mr-[10px] ml-[20px] border-[1px] border-white rounded-md p-[7px]"
-                                    href="/about">About us</a></li>
+                            <li><RouterLink to="./about" class=" text-xl font-serif hover:text-2xl max-[600px]:mr-[10px] ml-[20px] border-[1px] border-white rounded-md p-[7px]"
+                                    >About us</RouterLink></li>
 
                         </ul>
                     </div>
@@ -58,8 +59,8 @@ export default {
                     <div class="hidden min-[730px]:flex justify-center items-center">
                         <a class="mr-[15px] text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md hover:text-purple-400"
                             href="">Carrello</a>
-                        <a class="text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md  hover:text-purple-400"
-                            href="">Login</a>
+                        <RouterLink  to="./login" class="text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md  hover:text-purple-400"
+                           >Login</RouterLink>
                     </div>
 
                     <div class="hidden max-[730px]:flex">
@@ -73,10 +74,10 @@ export default {
                         </button>
 
                         <div v-if="isDropdownOpen" class="absolute mt-1 bg-white border rounded-md shadow-md z-20">
-                            <a href="#" class="block px-2 py-1 text-gray-800 hover:bg-blue-100"
-                                @click="handleOptionClick('Opzione 1')">Login</a>
-                            <a href="#" class="block px-2 py-1 text-gray-800 hover:bg-blue-100"
-                                @click="handleOptionClick('Opzione 2')">Carrello</a>
+                            <RouterLink to="./login" class="block px-2 py-1 text-gray-800 hover:bg-blue-100"
+                                @click="handleOptionClick('Opzione 1')">Login</RouterLink>
+                            <RouterLink to="#" class="block px-2 py-1 text-gray-800 hover:bg-blue-100"
+                                @click="handleOptionClick('Opzione 2')">Carrello</RouterLink>
                         </div>
                     </div>
 
