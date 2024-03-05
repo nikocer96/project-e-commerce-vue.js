@@ -1,0 +1,8 @@
+{
+    "user":[
+        {"name":"Alessandro@test.it", "password":"Test123","id": 1},
+        {"name":"Jesus@test.it", "password":"Test123","id": 2},
+        {"name":"Giuseppe@test.it", "password":"Test123","id": 3},
+        {"name":"Nico@test.it", "password":"Test123","id": 4}
+    ]
+}
