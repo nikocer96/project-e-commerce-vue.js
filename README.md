@@ -14,3 +14,7 @@ Progetto realizzato in Vue.js, tailwind e fakeStoreApi.
  
  - 04/03/2024
  Creato repository progetto. Creato vari branch(6). Brainstorning sulla struttura del progetto. Bozza disegnata su Canva. Divisi i vari compiti.
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/jesus
