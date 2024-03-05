@@ -1,4 +1,39 @@
 <script>
+import axios from 'axios'
+export default {
+  data() {
+    return {
+      prodotti: [],
+      singolo: '',
+      casuale: ''
+    }
+  },
+  created() {
+    this.casuale = Math.floor(Math.random() * 20) + 1;  
+    axios.get(`https://fakestoreapi.com/products/${this.casuale}`)
+      .then(response => {
+        this.singolo = response.data;
+      })
+      .catch (error => {
+        console.error('Errore durante la chiamata API:',error);
+      }) 
+  },
+  mounted() {
+    
+    axios.get('https://fakestoreapi.com/products')
+      .then(response => {
+        this.prodotti = response.data;
+      })
+      .catch(error => {
+        console.error('Errore durante la chiamata API:',error);
+      });
+  },
+  methods: {
+    // aggiungiCarrello() {
+      
+    // }
+  }
+}
 </script>
 
 <template>

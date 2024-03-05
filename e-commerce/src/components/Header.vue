@@ -32,7 +32,7 @@ export default {
                     <div>
                         <ul class="flex">
                             <li><a class=" text-3xl font-semibold font-serif hover:text-4xl max-[700px]:text-2xl max-[600px]:mr-[20px]"
-                                    href="">About us</a></li>
+                                    href="/about">About us</a></li>
 
                         </ul>
                     </div>
