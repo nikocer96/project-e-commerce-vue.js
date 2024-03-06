@@ -15,6 +15,7 @@
     <script>
     import { RouterLink } from 'vue-router';
     import axios from 'axios';
+    import Header from "../components/Header.vue";
     
     const validateEmail = (email) => {
       return email.match(
@@ -28,8 +29,7 @@
         return {
             email:"",
             password:"",
-            emailcheck:"",
-            passwordcheck:""
+            Loggato:false
         }
     },
     methods:
@@ -46,6 +46,7 @@
                     })
                     console.warn(risultato);
                     alert("sign up completato!");
+                    Header.Loggato = true;
                     localStorage.setItem("user.info", JSON.stringify(risultato.data));
                 }
                 else
@@ -65,6 +66,7 @@
             )
             if(risultato.status == 200 && risultato.data.length>0)
             {
+                this.$emit("login-success");
                 alert("Login effettuato con successo!")
                 console.log(risultato.data);
                 localStorage.setItem("user.info", JSON.stringify(risultato.data[0]));

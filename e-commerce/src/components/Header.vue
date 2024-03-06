@@ -2,6 +2,9 @@
 import { RouterLink } from 'vue-router';
 
 export default {
+    props: {
+        isLoggedIn: Boolean
+    },
     data() {
         return {
             isDropdownOpen: false,
@@ -16,8 +19,9 @@ export default {
             this.selectedOption = option;
             this.isDropdownOpen = false;
         },
-        login() {
-            
+        handleLogout() {
+            this.$emit("logout");
+            this.$router.push("./");
         }
     }
 }
@@ -57,10 +61,15 @@ export default {
                             type="text" placeholder="Ricerca">
                     </form>
                     <div class="hidden min-[730px]:flex justify-center items-center">
-                        <a class="mr-[15px] text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md hover:text-purple-400"
-                            href="">Carrello</a>
-                        <RouterLink  to="./login" class="text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md  hover:text-purple-400"
-                           >Login</RouterLink>
+                    <div>                        
+                        <div v-if="isLoggedIn">                           
+                        <button            class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold" @click="handleLogout">Logout</button>            
+                        <RouterLink to="#" class="ml-[10px] border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold">Carrello</RouterLink>
+                    </div>                         
+                    <div v-else>                             
+                        <router-link to="/login" class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold">Login</router-link>                         
+                    </div>                     
+                    </div>
                     </div>
 
                     <div class="hidden max-[730px]:flex">
@@ -74,15 +83,32 @@ export default {
                         </button>
 
                         <div v-if="isDropdownOpen" class="absolute mt-1 bg-white border rounded-md shadow-md z-20">
-                            <RouterLink to="./login" class="block px-2 py-1 text-gray-800 hover:bg-blue-100"
-                                @click="handleOptionClick('Opzione 1')">Login</RouterLink>
-                            <RouterLink to="#" class="block px-2 py-1 text-gray-800 hover:bg-blue-100"
-                                @click="handleOptionClick('Opzione 2')">Carrello</RouterLink>
+                                                  
+                            <div v-if="isLoggedIn">                           
+                            <button class="w-[80px] h-[30px] border-[1px] border-white rounded-md p-[7px] text-black text-xl font-serif font-semibold" @click="handleLogout">Logout</button> 
+                            <button class="w-[80px] h-[30px] border-[1px] border-white rounded-md p-[7px] text-black text-xl font-serif font-semibold">
+                                <RouterLink to="#">Carrello</RouterLink>
+                            </button>           
+                            </div>                         
+                            <div v-else>                             
+                            <router-link to="/login" class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold text-black">Login</router-link>                         
+                            </div>                     
                         </div>
                     </div>
+            
 
                 </div>
             </div>
         </div>
     </nav>
 </template>
+
+
+
+
+
+
+
+
+
+
