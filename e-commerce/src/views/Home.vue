@@ -31,17 +31,13 @@ export default {
       });
   },
   methods: {
-    aggiungiCarrello(index) {
-        let products = {
-          title: this.prodotti[index].title,
-          image: this.prodotti[index].image,
-          price: this.prodotti[index].price
-        }
-
-        let data = JSON.stringify(products);
-        window.localStorage.setItem('../assets/carrello.json',data);
-        console.log(JSON.parse(window.localStorage.getItem('../assets/carrello.json')));
-        // sistemare salvataggio al json locale
+    async aggiungiCarrello(index) {
+      
+      const result = await axios.post('http://localhost:3000/prodotti',{
+        title: this.prodotti[index].title,
+        image: this.prodotti[index].image,
+        price: this.prodotti[index].price
+      })
 
     },
     apriPagina(index){
