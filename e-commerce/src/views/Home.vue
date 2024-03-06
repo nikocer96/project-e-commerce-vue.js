@@ -21,7 +21,6 @@ export default {
       }) 
   },
   mounted() {
-    
     axios.get('https://fakestoreapi.com/products')
       .then(response => {
         this.prodotti = response.data;
@@ -40,8 +39,8 @@ export default {
       })
 
     },
-    apriPagina(index){
-      this.$router.push(`./prodotto`); // aggiungere props con indice
+    apriPagina(){
+      this.$router.push(`./prodotto/`); //TODO: Collegare con id prodotto
     } 
   }
 }
@@ -66,7 +65,7 @@ export default {
       <ul class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
         <li v-for="(prodotto, index) in prodotti">
           <div class="bg-[#fefcfb] border-2 rounded-2xl flex flex-col items-center justify-center p-[8px]">
-            <img :src="prodotto.image" :alt="prodotto.title" @click="apriPagina(index)" class="object-size-down h-[150px] md:h-[200px] lg:h[350px]">
+            <img :src="prodotto.image" :alt="prodotto.title" @click="apriPagina" class="object-size-down h-[150px] md:h-[200px] lg:h[350px]">
             <span class="mt-[10px] text-black font-medium">{{ prodotto.title }}</span>
             <div class="mt-[10px] flex">
               <span class="text-black font-bold mr-[50px]">{{ prodotto.price }}€</span>
