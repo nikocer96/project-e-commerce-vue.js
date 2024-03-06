@@ -29,7 +29,7 @@ export default {
 </script>
 
 <template>
-    <main class="bg-[#0a1128] w-full h-screen p-[24px]">
+    <main class="bg-[#0a1128] w-full h-full p-[24px]">
         <h1 class="text-white font-semibold text-[30px] mb-[30px]">Carrello</h1>
         <h3 class="text-white font-semibold text-[30px] mb-[30px]" v-if="this.products.length===0">Il carrello è vuoto</h3>
         <ul v-else>
