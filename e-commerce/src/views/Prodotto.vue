@@ -7,7 +7,8 @@ export default {
     }
   },
   mounted() {
-    axios.get(`https://fakestoreapi.com/products/1`) //TODO: Colleagare id
+    const productId = this.$route.params.id;
+    axios.get(`https://fakestoreapi.com/products/${productId}`) 
       .then(response => {
         this.prodotto = response.data;
     })
@@ -31,7 +32,7 @@ export default {
 
 <template>
 
-<div class=" w-full bg-[#0a1128] flex flex-col justify-center items-center">
+<div class=" w-full bg-[#0a1128] flex flex-col justify-center items-center p-[24px]">
   <!-- HOME PRODOTTO -->
   <h1 class="text-white font-bold text-[40px] mb-[50px]">{{ prodotto.title }}</h1>
   <img :src="prodotto.image" :alt="prodotto.title" class="object-small-size h-[450px]">
