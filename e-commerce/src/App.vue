@@ -8,14 +8,26 @@ export default {
   components: {
     Header,
     Footer
+  },
+  data() {
+    return {
+      isLoggedIn: false
+    };
+  },
+  methods: {
+    handleLoginSuccess() {
+      this.isLoggedIn = true;
+    },
+    handleLogout() {
+      this.isLoggedIn = false;
+    }
   }
 }
 
 </script>
 
 <template>
-  <Header />
-  <RouterView />
+  <Header :isLoggedIn="isLoggedIn" @logout="handleLogout" />
+  <router-view @login-success="handleLoginSuccess" />
   <Footer />
 </template>
-
