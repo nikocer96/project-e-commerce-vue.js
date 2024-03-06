@@ -4,7 +4,6 @@ import { RouterView } from 'vue-router'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
-
 export default {
   components: {
     Header,
@@ -16,8 +15,7 @@ export default {
 
 <template>
   <Header />
- <RouterView />
- <Footer/>
- 
+  <RouterView />
+  <Footer />
 </template>
 

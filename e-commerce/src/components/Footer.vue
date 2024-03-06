@@ -4,9 +4,6 @@ import { RouterLink } from 'vue-router';
 
 
 <template>
-    
-    
-
     <footer class="bg-[#0a1128]  shadow-[##B02E0C]  ">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
@@ -33,6 +30,4 @@ import { RouterLink } from 'vue-router';
         <span class="block text-xs text-red-500  sm:text-center hover:text-white">© 2024 <a href= "" class="hover:underline">Room4Commerce™</a>. All Rights Reserved.</span>
     </div>
 </footer>
-    
-    
 </template>

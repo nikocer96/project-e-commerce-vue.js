@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import AboutUs from '@/views/AboutUs.vue'
 import Login from "../views/Login.vue"
 
+import Prodotto from '../views/Prodotto.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -10,6 +11,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/prodotto',
+      name: 'prodotto',
+      component: Prodotto
     },
     {
       path: '/about',
