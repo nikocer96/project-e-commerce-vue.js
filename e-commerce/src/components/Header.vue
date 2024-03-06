@@ -26,8 +26,7 @@ export default {
 
 <template>
     <nav class="overflow-x-hidden">
-        
-        <div class="flex h-[100px] bg-[#0a1128] justify-between items-center p-[10px]">
+        <div class="flex h-[100px] bg-[#0a1128] text-white justify-between items-center p-[10px]">
             <div class="mr-[10px]">
                 <RouterLink to="/">
                     <img class="h-[60px] w-[70px] md:max-w-none md:h-[100px] md:w-[100px]"
@@ -35,7 +34,7 @@ export default {
                 </RouterLink>
             </div>
             <div class="hidden min-[480px]:flex mr-[20px]">
-                <RouterLink to="/" class="  text-sm text-white font-anta">HOME</RouterLink>
+                <RouterLink to="/" class="border-[1px] border-white p-[7px] rounded-md text-xl font-serif">Home</RouterLink>
             </div>
             <div>
 
@@ -43,20 +42,10 @@ export default {
 
                     <div>
                         <ul class="flex">
-            
-                   <li>     
-                <RouterLink to="./about" class= "text-sm text-white font-anta">ABOUT US</RouterLink>
-               </li>
+                            <li><RouterLink to="./about" class=" text-xl font-serif hover:text-2xl max-[600px]:mr-[10px] ml-[20px] border-[1px] border-white rounded-md p-[7px]"
+                                    >About us</RouterLink></li>
 
                         </ul>
-                    </div>
-
-                    
-                    <div class="hidden min-[730px]:flex justify-center items-center">
-                        <RouterLink to="#" class="mr-[15px] text-sm font-anta font-semibold text-black  p-[7px] rounded-md hover:text-[#EB4511]"
-                            >Carrello</RouterLink>
-                        <RouterLink  to="./login" class="text-sm  text-black font-anta font-semibold p-[7px] rounded-md  hover:text-[#EB4511]"
-                           >Login</RouterLink>
                     </div>
 
                     <form class="flex justify-end items-center">
@@ -64,10 +53,16 @@ export default {
                             <RouterLink to="#"><img class="h-[30px] w-[30px] mt-[5px] mr-[20px] rounded-sm"
                                     src="../assets/lente.svg" alt="immagine-lente-ricerca"></RouterLink>
                         </div>
-                        <input class=" font-anta hidden min-[600px]:flex w-[100%] h-[100%] ml-[15px] mr-[10px] rounded-[20px]"
+                        <input class="hidden min-[600px]:flex w-[100%] h-[100%] ml-[15px] mr-[10px] rounded-[20px]"
                             type="text" placeholder="Ricerca">
                     </form>
-                </div>
+                    <div class="hidden min-[730px]:flex justify-center items-center">
+                        <RouterLink to="#" class="mr-[15px] text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md hover:text-purple-400"
+                            >Carrello</RouterLink>
+                        <RouterLink  to="./login" class="text-xl font-serif font-semibold border-[1px] border-white p-[7px] rounded-md  hover:text-purple-400"
+                           >Login</RouterLink>
+                    </div>
+
                     <div class="hidden max-[730px]:flex">
                         <button class="bg-blue-500 text-white px-3 py-1 rounded" @click="toggleDropdown">
                             Opzioni
@@ -88,6 +83,6 @@ export default {
 
                 </div>
             </div>
-      
+        </div>
     </nav>
 </template>
