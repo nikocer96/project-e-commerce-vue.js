@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "email": "alessandro@test.it",
+      "password": "Test123",
+      "id": "f6fe"
+    },
+    {
+      "email": "jesus@test.it",
+      "password": "Test123",
+      "id": "9fce"
+    },
+    {
+      "email": "nico@test.it",
+      "password": "Test123",
+      "id": "ec08"
+    },
+    {
+      "email": "giuseppe@test.it",
+      "password": "Test123",
+      "id": "df25"
+    }
+  ],
+  "prodotti": []
+}
