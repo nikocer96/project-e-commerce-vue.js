@@ -1,13 +1,13 @@
 <template>
-    <div class="border border-black h-[400px] bg-[#0a1128]">
-        <h1 class="flex justify-center items-center mb-[100px] text-white">Pagina Login/Registrati</h1>
+    <div class="border border-[#EB4511] h-[400px] bg-[#C1BFB5]">
+        <h1 class="flex justify-center items-center mb-[100px] text-[#B02E0C]">Pagina Login/Registrati</h1>
         <div class="flex flex-col justify-center items-center">
-            <input class="w-[300px] border-2 border-black mb-[20px] text-center text-white" type ="text" v-model="email" placeholder="Registra la Email" />
-            <input class="w-[300px] border-2 border-black mb-[20px] text-center text-white" type ="password" v-model="password" placeholder="Registra la Password" />
+            <input class="w-[300px] border-2 border-[#EB4511] mb-[20px] text-center text-[#B02E0C]" type ="text" v-model="email" placeholder="Registra la Email" />
+            <input class="w-[300px] border-2 border-[#EB4511] mb-[20px] text-center text-[#B02E0C]" type ="password" v-model="password" placeholder="Registra la Password" />
         </div>
         <div class="flex justify-between items-center mx-[350px] mt-[70px]">
-            <button class="border-2 w-[70px] border-white rounded-full text-white" v-on:click="Login">Login</button>
-            <button class="border-2 w-[90px] border-white rounded-full text-white" v-on:click="SignUp">Registrati</button>
+            <button class="border-2 w-[70px] border-[#EB4511] rounded-full text-[#B02E0C]" v-on:click="Login">Login</button>
+            <button class="border-2 w-[90px] border-[#EB4511] rounded-full text-[#B02E0C] font-anta-regular" v-on:click="SignUp">Registrati</button>
         </div>
     </div>
     </template>
