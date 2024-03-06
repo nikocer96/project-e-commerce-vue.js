@@ -1,7 +1,6 @@
-<script>
-
-</script>
-
 <template>
-  
-</template>
+
+</template> 
+
+<script>
+</script>
