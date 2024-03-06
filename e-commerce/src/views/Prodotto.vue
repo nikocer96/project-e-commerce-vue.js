@@ -17,12 +17,12 @@ export default {
     })
   },
   methods: {
-    async aggiungiCarrello(index) {
+    async aggiungiCarrello() {
       await axios.post('http://localhost:3000/prodotti',{
-        id: this.prodotti[index].id + "",
-        title: this.prodotti[index].title,
-        image: this.prodotti[index].image,
-        price: this.prodotti[index].price
+        id: this.prodotto.id + "",
+        title: this.prodotto.title,
+        image: this.prodotto.image,
+        price: this.prodotto.price
       })
 
     }
@@ -44,7 +44,7 @@ export default {
         <!-- BOTTONE -->
         <!-- TODO: collegare id -->
         <button 
-          @click="aggiungiCarrello(prodotto.id)" class="bg-blue-600 px-20 text-white rounded-lg font-bold hover:bg-blue-500">
+          @click="aggiungiCarrello()" class="bg-blue-600 px-20 text-white rounded-lg font-bold hover:bg-blue-500">
           AGGIUNGI AL CARRELLO
         </button>
       </div>
