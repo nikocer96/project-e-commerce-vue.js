@@ -30,7 +30,7 @@ export default {
             <div class="mr-[10px]">
                 <RouterLink to="/">
                     <img class="h-[60px] w-[70px] md:max-w-none md:h-[100px] md:w-[100px]"
-                        src="../assets/logo-ec.png" alt="logo-e-commerce">
+                        src="../assets/logo5.png" alt="logo-e-commerce">
                 </RouterLink>
             </div>
             <div class="hidden min-[480px]:flex mr-[20px]">
