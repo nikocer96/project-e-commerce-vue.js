@@ -56,6 +56,6 @@ export default {
             </li>
         </ul>
         <button class="border-[1px] border-white text-white p-[10px] rounded-md" @click="sommaPrezzi">Clicca</button>
-        <div class="text-white mt-4">Totale: {{ totale }} €</div>
+        <div class="text-white mt-4">Totale: {{ this.totale }} €</div>
     </main>
 </template>
