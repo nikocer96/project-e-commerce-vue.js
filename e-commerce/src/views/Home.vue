@@ -32,8 +32,8 @@ export default {
   },
   methods: {
     async aggiungiCarrello(index) {
-      
-      const result = await axios.post('http://localhost:3000/prodotti',{
+      await axios.post('http://localhost:3000/prodotti',{
+        id: this.prodotti[index].id + "",
         title: this.prodotti[index].title,
         image: this.prodotti[index].image,
         price: this.prodotti[index].price
