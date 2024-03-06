@@ -42,7 +42,7 @@ export default {
 
 <template>
         <div class="bg-[#0a1128]">
-            <h1 class="text-center font-bold text-purple-600 text-5xl pb-9">CHI SIAMO?</h1>
+            <h1 class="text-center font-bold shadow-[#B02E0C] text-red-500 text-5xl pb-9">CHI SIAMO?</h1>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-10 ">
                 <div v-for="item in sviluppatori" class="flex justify-around items-center md:flex-col">
                     <!-- <span class="w-[40px] md:hidden">{{ item.nome }}</span> -->

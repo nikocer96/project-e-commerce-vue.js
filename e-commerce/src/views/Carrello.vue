@@ -31,7 +31,7 @@ export default {
 <template>
     <main class="bg-[#0a1128] w-full h-full p-[24px]">
         <h1 class="text-white font-semibold text-[30px] mb-[30px]">Carrello</h1>
-        <h3 class="text-white font-semibold text-[30px] mb-[30px]" v-if="this.products.length===0">Il carrello è vuoto</h3>
+        <h3 class="text-white font-semibold text-[30px] text-center mt-[100px] mb-[250px]" v-if="this.products.length===0">Il carrello è vuoto</h3>
         <ul v-else>
             <li v-for="product in products" class="border-2 border-white w-[700px] h-[250px] mb-[20px] p-[24px] flex items-center">
                 <img :src="product.image" :alt="product.title" class="object-small-size h-[200px] mr-[20px]">

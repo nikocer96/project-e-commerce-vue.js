@@ -1,5 +1,6 @@
 <script>
 import { RouterLink } from 'vue-router';
+import axios from 'axios'
 
 export default {
     props: {
@@ -9,7 +10,17 @@ export default {
         return {
             isDropdownOpen: false,
             selectedOption: null,
+            quantita: ''
         };
+    },
+    mounted() {
+        axios.get('http://localhost:3000/prodotti')
+            .then(response => {
+                this.quantita = response.data.length;
+            })
+            .catch(error => {
+                console.error('Errore durante la chiamata al json locale', error)
+            })
     },
     methods: {
         toggleDropdown() {
@@ -46,7 +57,7 @@ export default {
 
                     <div>
                         <ul class="flex">
-                            <li><RouterLink to="./about" class=" text-xl font-serif hover:text-2xl max-[600px]:mr-[10px] ml-[20px] border-[1px] border-white rounded-md p-[7px]"
+                            <li><RouterLink to="/about" class=" text-xl font-serif hover:text-2xl max-[600px]:mr-[10px] ml-[20px] border-[1px] border-white rounded-md p-[7px]"
                                     >About us</RouterLink></li>
 
                         </ul>
@@ -61,15 +72,15 @@ export default {
                             type="text" placeholder="Ricerca">
                     </form>
                     <div class="hidden min-[730px]:flex justify-center items-center">
-                    <div>                        
-                        <div v-if="isLoggedIn">                           
-                        <button class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold" @click="handleLogout">Logout</button>            
-                        <RouterLink to="/carrello" class="ml-[10px] border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold">Carrello</RouterLink>
-                    </div>                         
-                    <div v-else>                             
-                        <router-link to="/login" class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold">Login</router-link>                         
-                    </div>                     
-                    </div>
+                        <div>                        
+                            <div v-if="isLoggedIn">                           
+                                <button class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold" @click="handleLogout">Logout</button>            
+                                <RouterLink to="/carrello" class="ml-[10px] border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold">Carrello <span class="bg-white w-[30px] h-[30px] text-black text-center rounded-[50%]">{{ quantita }}</span></RouterLink>
+                            </div>                         
+                            <div v-else>                             
+                                <router-link to="/login" class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold">Login</router-link>                         
+                            </div>                     
+                        </div>
                     </div>
 
                     <div class="hidden max-[730px]:flex">
