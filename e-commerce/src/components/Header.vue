@@ -63,8 +63,8 @@ export default {
                     <div class="hidden min-[730px]:flex justify-center items-center">
                     <div>                        
                         <div v-if="isLoggedIn">                           
-                        <button            class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold" @click="handleLogout">Logout</button>            
-                        <RouterLink to="#" class="ml-[10px] border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold">Carrello</RouterLink>
+                        <button class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold" @click="handleLogout">Logout</button>            
+                        <RouterLink to="/carrello" class="ml-[10px] border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold">Carrello</RouterLink>
                     </div>                         
                     <div v-else>                             
                         <router-link to="/login" class="border-[1px] border-white rounded-md p-[7px] text-xl font-serif font-semibold">Login</router-link>                         
@@ -87,7 +87,7 @@ export default {
                             <div v-if="isLoggedIn">                           
                             <button class="w-[80px] h-[30px] border-[1px] border-white rounded-md p-[7px] text-black text-xl font-serif font-semibold" @click="handleLogout">Logout</button> 
                             <button class="w-[80px] h-[30px] border-[1px] border-white rounded-md p-[7px] text-black text-xl font-serif font-semibold">
-                                <RouterLink to="#">Carrello</RouterLink>
+                                <RouterLink to="/carrello">Carrello</RouterLink>
                             </button>           
                             </div>                         
                             <div v-else>                             
