@@ -23,14 +23,24 @@ export default {
             }catch(error) {
                 console.error("Errore durante la chiamata al json locale:", error)
             }
+        },
+        
+    },
+    computed: 
+    {
+        sommaPrezzi() {
+            this.totale = this.products.reduce((acc, product) => acc + product.price, 0);
+            this.totale = this.totale.toFixed(2);
+            return this.totale;
         }
     }
 }
 </script>
 
 <template>
-    <main class="bg-[#0a1128] w-full h-full p-[24px]">
-        <h1 class="text-white font-semibold text-[30px] mb-[30px]">Carrello</h1>
+    <main class="bg-[#0a1128] w-full h-full p-[24px] flex justify-around items-center flex-col lg:flex-row">
+        <div class="flex flex-col">
+            <h1 class="text-white font-semibold text-[30px] mb-[30px]">Carrello</h1>
         <h3 class="text-white font-semibold text-[30px] text-center mt-[100px] mb-[250px]" v-if="this.products.length===0">Il carrello è vuoto</h3>
         <ul v-else>
             <li v-for="product in products" class="border-2 border-white w-[700px] h-[250px] mb-[20px] p-[24px] flex items-center">
@@ -42,5 +52,7 @@ export default {
                 </div>
             </li>
         </ul>
+        </div>
+        <div class="text-white mt-4 text-xl font-medium">Totale: {{ sommaPrezzi }} €</div>
     </main>
 </template>

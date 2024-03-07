@@ -1,6 +1,7 @@
 <script>
 import { RouterLink } from 'vue-router';
 import axios from 'axios'
+import { computed } from 'vue';
 
 export default {
     props: {
@@ -9,7 +10,8 @@ export default {
     data() {
         return {
             isDropdownOpen: false,
-            selectedOption: null
+            selectedOption: null,
+            quantita: ""
         };
     },
     methods: {
@@ -23,10 +25,11 @@ export default {
         handleLogout() {
             this.$emit("logout");
             this.$router.push("./");
-        }
-    }
- 
+        },
+    },
 }
+ 
+
 </script>
 
 
@@ -50,7 +53,6 @@ export default {
                         <ul class="flex">
                             <li><RouterLink to="/about" class=" text-xl font-serif hover:text-2xl max-[600px]:mr-[10px] ml-[20px] border-[1px] border-white rounded-md p-[7px]"
                                     >About us</RouterLink></li>
-
                         </ul>
                     </div>
 
