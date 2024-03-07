@@ -13,8 +13,11 @@ export default {
     },
     methods: {
         async rimuoviProdotto(index) {
-            const response = await axios.delete(`http://localhost:3000/prodotti/${index}`)
-                .then(response => this.prendiProdotti());
+            // const response = await axios.delete(`http://localhost:3000/prodotti/${index}`)
+                // .then(response => this.prendiProdotti());
+                await axios.delete(`http://localhost:3000/prodotti/${index}`);
+                await this.prendiProdotti();
+                this.$emit('prodottoRimosso');
         },
         async prendiProdotti() {
             try{

@@ -24,6 +24,8 @@ export default {
         image: this.prodotto.image,
         price: this.prodotto.price
       })
+      await this.prendiProdotti()
+      this.$emit('prodottoAggiunto');
 
     }
   } 

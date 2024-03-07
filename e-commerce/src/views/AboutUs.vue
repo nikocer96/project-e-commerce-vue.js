@@ -30,7 +30,7 @@ export default {
                     lavoro : "Front-End Developer"
                 },
                 {   id : 4,
-                    nome : "Giulia Picano",
+                    nome : "Giulia Calabro",
                     immagine : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0by_6XFgd4UaD1LskiqDA8oYr54o8te4k2g&usqp=CAU",
                     lavoro : "Front-End Developer"
                 },          

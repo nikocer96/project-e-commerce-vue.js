@@ -11,7 +11,7 @@ export default {
         return {
             isDropdownOpen: false,
             selectedOption: null,
-            quantita: ""
+            quantita: 0
         };
     },
     methods: {
@@ -25,11 +25,25 @@ export default {
         handleLogout() {
             this.$emit("logout");
             this.$router.push("./");
-        },
+        }
     },
+    async created() {
+        await this.prendiProdotti();
+    },
+    computed: {
+        async prendiProdotti() {
+            try{
+                const response = await axios.get('http://localhost:3000/prodotti');
+                this.quantita = response.data.length;
+                console.log(this.quantita);
+                return this.quantita;
+            }catch(error) {
+                console.error("Errore durante la chiamata al json locale:", error)
+            }
+    }
 }
  
-
+}
 </script>
 
 
