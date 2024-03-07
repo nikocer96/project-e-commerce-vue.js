@@ -11,7 +11,7 @@ export default {
                 {
                     id : 2,
                     nome : "Alessandro Agnello",
-                    immagine : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0by_6XFgd4UaD1LskiqDA8oYr54o8te4k2g&usqp=CAU",
+                    immagine : "../src/assets/si.png",
                     lavoro : "Front-End Developer"
                 },
                 {   id : 3,
@@ -21,7 +21,7 @@ export default {
                 },
                 {   id : 4,
                     nome : "Giuseppe Raineri",
-                    immagine : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0by_6XFgd4UaD1LskiqDA8oYr54o8te4k2g&usqp=CAU",
+                    immagine : "../src/assets/si2.jpg",
                     lavoro : "Front-End Developer"
                 },
                 {   id : 5,
