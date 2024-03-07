@@ -16,7 +16,7 @@ export default {
                 },
                 {   id : 3,
                     nome : "Nico Cerone",
-                    immagine : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0by_6XFgd4UaD1LskiqDA8oYr54o8te4k2g&usqp=CAU",
+                    immagine: "../src/assets/niko.png",
                     lavoro : "Front-End Developer"
                 },
                 {   id : 4,
