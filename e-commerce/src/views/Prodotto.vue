@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      prodotto: [],
+      prodotto: []
     }
   },
   mounted() {

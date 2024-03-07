@@ -9,18 +9,8 @@ export default {
     data() {
         return {
             isDropdownOpen: false,
-            selectedOption: null,
-            quantita: ''
+            selectedOption: null
         };
-    },
-    mounted() {
-        axios.get('http://localhost:3000/prodotti')
-            .then(response => {
-                this.quantita = response.data.length;
-            })
-            .catch(error => {
-                console.error('Errore durante la chiamata al json locale', error)
-            })
     },
     methods: {
         toggleDropdown() {
@@ -35,6 +25,7 @@ export default {
             this.$router.push("./");
         }
     }
+ 
 }
 </script>
 
@@ -106,8 +97,6 @@ export default {
                             </div>                     
                         </div>
                     </div>
-            
-
                 </div>
             </div>
         </div>
