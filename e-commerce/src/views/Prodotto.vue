@@ -26,9 +26,6 @@ export default {
 <template>
 
 <div class="border-2 border-red-500 w-screen bg-[#0a1128] flex flex-col justify-center items-center">
-    <!-- NAV -->
-    <div class="bg-[#0a1128] border-2 border-red-500 w-screen h-[200px] max-[600px]:hidden"></div>
-    <div class="bg-[#0a1128] border-2 border-red-500 w-screen h-[50px] min-[600px]:hidden"></div>
     <!-- HOME PRODOTTO -->
         <h1>{{ prodotto.title }}</h1>
         <div class="border-2 border-red-500">
@@ -50,9 +47,7 @@ export default {
                     <Card v-if="prodotto" :prodotto="prodotto" />
                 </div>
             </div>
-            <!-- FOOTER -->
-            <div class="bg-[#0a1128] border-2 border-red-500 w-screen h-[200px] max-[600px]:hidden"></div>
-            <div class="bg-[#0a1128] border-2 border-red-500 w-screen h-[50px] min-[600px]:hidden"></div>
+            
             
             </div>
            
