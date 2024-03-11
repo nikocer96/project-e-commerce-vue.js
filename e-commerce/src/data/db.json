@@ -1,0 +1,150 @@
+{
+  "users": [
+    {
+      "email": "alessandro@test.it",
+      "password": "Test123",
+      "id": "f6fe"
+    },
+    {
+      "email": "jesus@test.it",
+      "password": "Test123",
+      "id": "9fce"
+    },
+    {
+      "email": "nico@test.it",
+      "password": "Test123",
+      "id": "ec08"
+    },
+    {
+      "email": "giuseppe@test.it",
+      "password": "Test123",
+      "id": "df25"
+    }
+  ],
+  "prodotti": [
+    {
+      "id": "3",
+      "title": "Mens Cotton Jacket",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "price": 55.99
+    },
+    {
+      "id": "2",
+      "title": "Mens Casual Premium Slim Fit T-Shirts ",
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "price": 22.3
+    },
+    {
+      "id": "3",
+      "title": "Mens Cotton Jacket",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "price": 55.99
+    }
+  ],
+  "carteUtenti": [
+    {
+      "nome": "Niko",
+      "cognome": "Cerone",
+      "numeroCarta": 12334567890
+    },
+    {
+      "id": "cf43"
+    },
+    {
+      "id": "c35e",
+      "nome": "dsfdsff",
+      "cognome": "vdsfsdsds",
+      "numeroCarta": 45453455543
+    },
+    {
+      "id": "fb6c",
+      "nome": "AXAXa",
+      "cognome": "dsvdfds",
+      "numeroCarta": 4567
+    },
+    {
+      "id": "5153",
+      "nome": "dedwdw",
+      "cognome": "fdsffdsfd",
+      "numeroCarta": 45434354
+    },
+    {
+      "id": "08d3",
+      "nome": "sdsadsad",
+      "cognome": "sadsasadsa",
+      "numeroCarta": 23232223
+    },
+    {
+      "id": "3213",
+      "nome": "wqdwq",
+      "cognome": "dd",
+      "numeroCarta": 456
+    },
+    {
+      "id": "fff4",
+      "nome": "sxxs",
+      "cognome": "sx",
+      "numeroCarta": 343434
+    },
+    {
+      "id": "4db8",
+      "nome": "ssds",
+      "cognome": "sadds",
+      "numeroCarta": 343433
+    },
+    {
+      "id": "6ccd",
+      "nome": "ewew",
+      "cognome": "dsfdsf",
+      "numeroCarta": 343
+    },
+    {
+      "id": "2af0",
+      "nome": "sasad",
+      "cognome": "asdadd",
+      "numeroCarta": 232232
+    },
+    {
+      "id": "5cbf",
+      "nome": "dffds",
+      "cognome": "sdffdsf",
+      "numeroCarta": 23233232
+    },
+    {
+      "id": "cbca",
+      "nome": "sadsaa",
+      "cognome": "sadsa",
+      "numeroCarta": 123455
+    },
+    {
+      "id": "d27d",
+      "nome": "sxs",
+      "cognome": "sdd",
+      "numeroCarta": 4434
+    },
+    {
+      "id": "3da2",
+      "nome": "assad",
+      "cognome": "dsadasdsad",
+      "numeroCarta": 344
+    },
+    {
+      "id": "789d",
+      "nome": "acsac",
+      "cognome": "ascaca",
+      "numeroCarta": 3232
+    },
+    {
+      "id": "ce83",
+      "nome": "sacsac",
+      "cognome": "asddsa",
+      "numeroCarta": 4334
+    },
+    {
+      "id": "4339",
+      "nome": "acasds",
+      "cognome": "sdadsd",
+      "numeroCarta": 232133
+    }
+  ]
+}
